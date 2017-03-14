@@ -1,0 +1,943 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/27/2016 12:48:49 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ZPIT-F123118N48"
+  DTS:CreatorName="CARLSBERGUA\d_smirnov"
+  DTS:DTSID="{2012F18A-393D-4D1B-A148-ABF8CBC4BB70}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="13.0.4001.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{2F483165-386E-4C6D-A1BB-A51FE00B5A0D}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{9C31814C-CAE7-4E68-8EBA-181A67922C2F}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1049"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003B_"
+          DTS:CodePage="1251"
+          DTS:ConnectionString="D:\Lottery\Temp\SuperLoto_Results.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Розыгрыш"
+              DTS:DTSID="{BAC95316-C1F2-4228-BC68-B3C7930F3F69}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Дата проведения"
+              DTS:DTSID="{CA7FE144-E547-4E18-927F-AC9EAA12AC09}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Лототрон"
+              DTS:DTSID="{62F0F2B8-810D-439C-8110-DC2A5004293E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Набор"
+              DTS:DTSID="{9BD9F4E6-FA29-47ED-95C2-122A22D9140E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Шар номер 1"
+              DTS:DTSID="{A76F7981-3511-4AEE-AA92-5699720BECCD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Шар номер 2"
+              DTS:DTSID="{17650B5C-CD91-4B2D-9966-8A47E5CE7D8E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Шар номер 3"
+              DTS:DTSID="{4D55C6DB-4677-46F6-B6EA-72FDAE98B83A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Шар номер 4"
+              DTS:DTSID="{31403211-19CE-4DF1-B8B4-BA0C6A0E089B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Шар номер 5"
+              DTS:DTSID="{91D981CA-AADE-40C9-9688-8EB0FF349DAB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Шар номер 6"
+              DTS:DTSID="{200892E9-E371-4937-B022-D68A3486402E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ZPIT-F123118N48\SDV1.sdv1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{1C99F6AA-52D8-4B0A-BC2D-472DDFE6DE5C}"
+      DTS:ObjectName="ZPIT-F123118N48\SDV1.sdv1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=ZPIT-F123118N48\SDV_DEV;Initial Catalog=sdv1;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{86A83858-FCA4-42C2-AE7F-0715DCF1F761}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{1C99F6AA-52D8-4B0A-BC2D-472DDFE6DE5C}"
+          SQLTask:SqlStatementSource="exec dbo.load_lottery_data&#xA; go" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Insert data to staging"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{B48379AC-165E-40C7-A62D-DA08B124A702}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Insert data to staging"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Insert data to staging\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1049"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Insert data to staging\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Розыгрыш]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Розыгрыш]"
+                      length="50"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Розыгрыш]"
+                      name="Розыгрыш"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Дата проведения]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Дата проведения]"
+                      length="50"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Дата проведения]"
+                      name="Дата проведения"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Лототрон]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Лототрон]"
+                      length="50"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Лототрон]"
+                      name="Лототрон"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Набор]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Набор]"
+                      length="50"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Набор]"
+                      name="Набор"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Шар номер 1]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Шар номер 1]"
+                      length="50"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Шар номер 1]"
+                      name="Шар номер 1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Шар номер 2]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Шар номер 2]"
+                      length="50"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Шар номер 2]"
+                      name="Шар номер 2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Шар номер 3]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Шар номер 3]"
+                      length="50"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Шар номер 3]"
+                      name="Шар номер 3"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Шар номер 4]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Шар номер 4]"
+                      length="50"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Шар номер 4]"
+                      name="Шар номер 4"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Шар номер 5]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Шар номер 5]"
+                      length="50"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Шар номер 5]"
+                      name="Шар номер 5"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Шар номер 6]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Шар номер 6]"
+                      length="50"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Шар номер 6]"
+                      name="Шар номер 6"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Розыгрыш]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Розыгрыш" />
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Дата проведения]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Дата проведения" />
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Лототрон]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Лототрон" />
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Набор]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Набор" />
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Шар номер 1]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Шар номер 1" />
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Шар номер 2]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Шар номер 2" />
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Шар номер 3]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Шар номер 3" />
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Шар номер 4]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Шар номер 4" />
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Шар номер 5]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Шар номер 5" />
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Шар номер 6]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Шар номер 6" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1251"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Insert data to staging\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Staging_Super_lotto]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Insert data to staging\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ZPIT-F123118N48\SDV1.sdv1]"
+                  connectionManagerRefId="Package.ConnectionManagers[ZPIT-F123118N48\SDV1.sdv1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Розыгрыш]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Розыгрыш"
+                      externalMetadataColumnId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Розыгрыш]"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Розыгрыш]" />
+                    <inputColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Дата проведения]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Дата проведения"
+                      externalMetadataColumnId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Дата проведения]"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Дата проведения]" />
+                    <inputColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Лототрон]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Лототрон"
+                      externalMetadataColumnId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Лототрон]"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Лототрон]" />
+                    <inputColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Набор]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Набор"
+                      externalMetadataColumnId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Набор]"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Набор]" />
+                    <inputColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Шар номер 1]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Шар номер 1"
+                      externalMetadataColumnId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Шар номер 1]"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Шар номер 1]" />
+                    <inputColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Шар номер 2]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Шар номер 2"
+                      externalMetadataColumnId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Шар номер 2]"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Шар номер 2]" />
+                    <inputColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Шар номер 3]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Шар номер 3"
+                      externalMetadataColumnId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Шар номер 3]"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Шар номер 3]" />
+                    <inputColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Шар номер 4]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Шар номер 4"
+                      externalMetadataColumnId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Шар номер 4]"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Шар номер 4]" />
+                    <inputColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Шар номер 5]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Шар номер 5"
+                      externalMetadataColumnId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Шар номер 5]"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Шар номер 5]" />
+                    <inputColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Шар номер 6]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Шар номер 6"
+                      externalMetadataColumnId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Шар номер 6]"
+                      lineageId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output].Columns[Шар номер 6]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Розыгрыш]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Розыгрыш" />
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Дата проведения]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Дата проведения" />
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Лототрон]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Лототрон" />
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Набор]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Набор" />
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Шар номер 1]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Шар номер 1" />
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Шар номер 2]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Шар номер 2" />
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Шар номер 3]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Шар номер 3" />
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Шар номер 4]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Шар номер 4" />
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Шар номер 5]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Шар номер 5" />
+                    <externalMetadataColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Шар номер 6]"
+                      codePage="1251"
+                      dataType="str"
+                      length="50"
+                      name="Шар номер 6" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Insert data to staging\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Insert data to staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Insert data to staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Insert data to staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Insert data to staging.Paths[Flat File Source Output]"
+              endId="Package\Insert data to staging\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Insert data to staging\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate staging table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{48FC47E2-7994-495A-B096-A6B08101AEEA}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate staging table"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{1C99F6AA-52D8-4B0A-BC2D-472DDFE6DE5C}"
+          SQLTask:SqlStatementSource="truncate table dbo.Staging_Super_lotto" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{B2E94D1D-9406-41D3-9B92-20737AF046D2}"
+      DTS:From="Package\Truncate staging table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Insert data to staging" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{5CB54B8C-F2AC-44C0-861C-CD0022D13FBE}"
+      DTS:From="Package\Insert data to staging"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Execute SQL Task" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Insert data to staging"
+          TopLeft="118,90" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Truncate staging table"
+          TopLeft="118,21" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="209.5,63">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,27"
+              Start="0,0"
+              End="0,19.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="126,203" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="208,132">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,71"
+              Start="0,0"
+              End="0,63.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,63.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Insert data to staging">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Insert data to staging\OLE DB Destination"
+          TopLeft="318,60" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Insert data to staging\Flat File Source"
+          TopLeft="70,38" />
+        <EdgeLayout
+          Id="Package\Insert data to staging.Paths[Flat File Source Output]"
+          TopLeft="221,59">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="97,22"
+              Start="0,0"
+              End="89.5,22">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="44.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="44.5,0"
+                    Point2="48.5,0"
+                    Point3="48.5,4" />
+                  <mssgle:LineSegment
+                    End="48.5,18" />
+                  <mssgle:CubicBezierSegment
+                    Point1="48.5,18"
+                    Point2="48.5,22"
+                    Point3="52.5,22" />
+                  <mssgle:LineSegment
+                    End="89.5,22" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Insert data to staging\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
